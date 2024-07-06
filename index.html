@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest Restaurant</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+.pins-container {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.pin {
+width: 300px;
+height: 250px;
+border-radius: 15px;
+border: 3px solid green;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 10px;
+position: relative;
+}
+.pin img {
+width: 100%;
+height: 100%;
+border-radius: 15px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.american_pin {
+background-image: url('american.jpg');
+}
+.chinese_pin {
+background-image: url('chinese.jpg');
+}
+.greek_pin {
+background-image: url('greek.jpg');
+}
+.italian_pin {
+background-image: url('italian.jpg');
+}
+.pin .bold-text {
+font-weight: bold;
+text-align: center;
+background-color: antiquewhite;
+border-radius: 20px;
+padding: 10px;
+margin: 12px 10px;
+position: relative;
+z-index: 1;
+}
+.pin a {
+text-decoration: none;
+color: black;
+}
+.info-text {
+text-align: center;
+margin-top: 20px;
+padding: 0;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<h1 class="main-heading">Best EATS In INDY</h1>
+<div class="background">
+<div class="pins-container">
+<div class="pin american_pin">
+<img src="american.jpg" alt="American Food">
+<div class="bold-text"><a href="american.html">American</a></div>
+</div>
+<div class="pin chinese_pin">
+<img src="chinese.jpg" alt="Chinese Food">
+<div class="bold-text"><a href="chinese.html">Chinese</a></div>
+</div>
+<div class="pin greek_pin">
+<img src="greek.jpg" alt="Greek Food">
+<div class="bold-text"><a href="greek.html">Greek</a></div>
+</div>
+<div class="pin italian_pin">
+<img src="italian.jpg" alt="Italian Food">
+<div class="bold-text"><a href="italian.html">Italian</a></div>
+</div>
+</div>
+<div class="info-text">
+<p>These are the most popular food choices made by Hoosiers this week. Click the link and see the most awarded restaurants in Indiana. Choose from the categories displayed above.</p>
+</div>
+</div>
+</body>
+</html>

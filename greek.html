@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greek Food</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+.pins-container {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+}
+.pin {
+width: 300px;
+height: 250px;
+border-radius: 15px;
+border: 3px solid green;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 10px;
+position: relative;
+}
+.pin img {
+width: 100%;
+height: 100%;
+border-radius: 15px;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.pin .home-link {
+position: absolute;
+top: -10px;
+left: 10px;
+z-index: 10;
+}
+.pin .home-link img {
+width: 30px;
+height: 30px;
+background-color: lightgreen;
+}
+.greek_pin {
+background-image: url('greek.jpg');
+}
+.pin .bold-text {
+font-weight: bold;
+text-align: center;
+background-color: antiquewhite;
+border-radius: 20px;
+padding: 10px;
+margin: 12px 10px;
+position: relative;
+z-index: 1;
+}
+.info-text {
+text-align: center;
+margin-top: 20px;
+padding: 0;
+width: 100%;
+}
+.address-text {
+margin: 10px 0 0 20px;
+text-align: left;
+}
+</style>
+</head>
+<body>
+<h1 class="main-heading">Greek</h1>
+<div class="background">
+<div class="pins-container">
+<div class="pin greek_pin">
+<a href="index.html" class="home-link">
+<img src="home.jpg" alt="Home">
+</a>
+<img src="greek.jpg" alt="Greek Food">
+<div class="bold-text">Greek Islands</div>
+</div>
+<div class="address-text">
+<p>906 S Meridian St<br> Indianapolis, IN 46225, Reservation Phone Number: 317-259-9412</p>
+</div>
+</div>
+<div class="info-text">
+<p>This is the most popular Greek food choice made by Hoosiers this week.</p>
+</div>
+</div>
+</body>
+</html>
